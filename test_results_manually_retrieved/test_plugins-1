@@ -1,0 +1,140 @@
+(.venv) miguelangelmunozvazquez@mac Research plugin development % python3 test_plugins.py
+executing fetch_data function
+data {'metrics': [Agg(open=278.855, high=315, low=274.8601, close=312.06, volume=981286396.624954, vwap=297.0655, timestamp=1777608000000, transactions=15340965, otc=None), Agg(open=309.625, high=317.4, low=273.75, close=289.36, volume=1401452688.211743, vwap=294.071, timestamp=1780286400000, transactions=20631634, otc=None), Agg(open=293.44, high=334.99, low=289.195, close=321.66, volume=785581932.170735, vwap=318.3339, timestamp=1782878400000, transactions=14336281, otc=None)]}
+.going to get result
+executing fetch_data function
+data {'metrics': [Agg(open=189.835, high=194.49, low=177.61, close=191.13, volume=3292228532.0, vwap=186.8516, timestamp=1767243600000, transactions=46000451, otc=None), Agg(open=187.2, high=197.6299, low=171.03, close=177.19, volume=3745445057.0838737, vwap=185.9167, timestamp=1769922000000, transactions=53484900, otc=None), Agg(open=175.01, high=188.88, low=164.27, close=174.4, volume=4027150966.050598, vwap=178.5613, timestamp=1772341200000, transactions=54121629, otc=None)]}
+Executing <Task finished name='Task-7' coro=<Kernel.invoke_function_call() done, defined at /Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/kernel.py:326> result=None created at /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/tasks.py:748> took 0.278 seconds
+executing validate_data function
+executing validate_data function
+executing validate_data function
+I have retrieved and validated the financial data for Nvidia from January 2026 to March 2026. Below is the summary:
+
+### January 2026
+- **Open**: $189.84
+- **High**: $194.49
+- **Low**: $177.61
+- **Close**: $191.13
+- **Volume**: 3,292,228,532
+- **VWAP**: $186.85
+- **Transactions**: 46,000,451
+
+### February 2026
+- **Open**: $187.20
+- **High**: $197.63
+- **Low**: $171.03
+- **Close**: $177.19
+- **Volume**: 3,745,445,057
+- **VWAP**: $185.92
+- **Transactions**: 53,484,900
+
+### March 2026
+- **Open**: $175.01
+- **High**: $188.88
+- **Low**: $164.27
+- **Close**: $174.40
+- **Volume**: 4,027,150,966
+- **VWAP**: $178.56
+- **Transactions**: 54,121,629
+
+These metrics illustrate the stock's opening and closing prices, highs and lows, volume of shares traded, and average price for each month. If you need more insights or further trend analysis, feel free to ask!
+going to get result
+executing validate_data function
+executing validate_data function
+executing validate_data function
+executing validate_data function
+executing validate_data function
+The financial data for Nvidia from January 2026 to March 2026 is validated multiple times, confirming consistency. Here is a market summarization:
+
+### Market Performance Summary:
+1. **January 2026**:
+   - Nvidia opened the month at $189.84 and closed at $191.13.
+   - The stock experienced a high of $194.49 and a low of $177.61.
+   - The average trading price (VWAP) for the month was $186.85.
+   - A total of approximately 3.29 billion shares were traded across 46 million transactions.
+
+2. **February 2026**:
+   - The month opened at $187.20 and closed at $177.19.
+   - A higher volatility observed with the stock reaching a high of $197.63 and a low of $171.03.
+   - VWAP was marginally lower at $185.92, with 3.75 billion in trade volume, indicating increased trading activity across 53.48 million transactions.
+
+3. **March 2026**:
+   - The month started at $175.01 and ended at $174.40.
+   - The stock peaked at $188.88, dropping to lows of $164.27.
+   - The trading volume continued to increase with about 4.03 billion shares traded. The average price hovered around $178.56, trades happened over approximately 54.12 million transactions.
+
+### Overall Summary:
+- Nvidia's stock exhibited volatility across the three months, with shifts in trading volumes and price fluctuations, indicative of active market trading and significant investor movements. 
+- The volatility suggests responses to market stimuli, potentially weighing on investor confidence toward continued performance through this period.
+
+For further insights on specific aspects or another time frame, feel free to inquire!
+going to get result
+executing validate_data function
+executing validate_data function
+executing validate_data function
+executing validate_data function
+executing validate_data function
+E
+======================================================================
+ERROR: test_market_data_extraction_then_market_summarization_and_finally_trend_analysis (__main__.PluginIntegrationTests.test_market_data_extraction_then_market_summarization_and_finally_trend_analysis)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/connectors/ai/open_ai/services/open_ai_handler.py", line 88, in _send_completion_request
+    response = await self.client.chat.completions.create(**settings_dict)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 2877, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<55 lines>...
+    )
+    ^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1977, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/openai/_base_client.py", line 1762, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-vjdcTc1wrePrJ03pUKZGngaw on tokens per min (TPM): Limit 30000, Used 29391, Requested 2734. Please try again in 4.25s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/test_plugins.py", line 50, in test_market_data_extraction_then_market_summarization_and_finally_trend_analysis
+    trend_analysis = await agent.invoke_agent("Provide a trend analysis")
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/plugins/main.py", line 103, in invoke_agent
+    result = await chat_completion.get_chat_message_content(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/connectors/ai/chat_completion_client_base.py", line 190, in get_chat_message_content
+    results = await self.get_chat_message_contents(chat_history=chat_history, settings=settings, **kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/connectors/ai/chat_completion_client_base.py", line 174, in get_chat_message_contents
+    return await self._inner_get_chat_message_contents(chat_history, settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/utils/telemetry/model_diagnostics/decorators.py", line 110, in wrapper_decorator
+    return await completion_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/connectors/ai/open_ai/services/open_ai_chat_completion_base.py", line 88, in _inner_get_chat_message_contents
+    response = await self._send_request(settings)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/connectors/ai/open_ai/services/open_ai_handler.py", line 60, in _send_request
+    return await self._send_completion_request(settings)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/miguelangelmunozvazquez/Documents/Azure Foundry  and AI related - code projects/Research plugin development/.venv/lib/python3.13/site-packages/semantic_kernel/connectors/ai/open_ai/services/open_ai_handler.py", line 105, in _send_completion_request
+    raise ServiceResponseException(
+    ...<2 lines>...
+    ) from ex
+semantic_kernel.exceptions.service_exceptions.ServiceResponseException: ("<class 'semantic_kernel.connectors.ai.open_ai.services.open_ai_chat_completion.OpenAIChatCompletion'> service failed to complete the prompt", RateLimitError("Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4o in organization org-vjdcTc1wrePrJ03pUKZGngaw on tokens per min (TPM): Limit 30000, Used 29391, Requested 2734. Please try again in 4.25s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}"))
+
+----------------------------------------------------------------------
+Ran 2 tests in 56.772s
+
+FAILED (errors=1)
