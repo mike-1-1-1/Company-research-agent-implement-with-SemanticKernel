@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Research plugin development",
+			"path": ".."
+		},
+		{
+			"name": "site-packages",
+			"path": "../.venv/lib/python3.13/site-packages"
+		}
+	],
+	"settings": {}
+}

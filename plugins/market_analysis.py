@@ -35,7 +35,7 @@ class MarketAnalysisPlugin:
         "major changes": a possibly empty list of major changes
         }
         """
-
+        # TODO Hipothesis: this function is being added multiple times because of the SK runtime behaviour, so investigate
         return kernel.add_function(
             function_name="MarketSummarization",
             plugin_name="MarketAnalysis",
@@ -44,6 +44,7 @@ class MarketAnalysisPlugin:
         )
 
     def basic_trends_identification(self, kernel: Kernel):
+        # TODO Hipothesis: this function is being added multiple times because of the SK runtime behaviour, so investigate
         print("executing basic_trends_identification function")
         """Create a Semantic Kernel prompt-based trend identification function.
 
