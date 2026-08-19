@@ -6,7 +6,7 @@ Initializes and manages an AI agent powered by Microsoft Semantic Kernel
 #TODO: fix that sometimes ticker is not actually used for the interaction
 #TODO: investigate that sometimes datavalidation function is called multiple
 #  times and analyze if it's actually repeating unnecessary validations
-#TODO: summarize history to prevent excesive token input
+#TODO: add database based vector store for chat history and user preferences
 
 import os
 import traceback
